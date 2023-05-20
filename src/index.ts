@@ -1,12 +1,18 @@
 import { injectGlobal } from "@emotion/css";
 
 
-
 injectGlobal`
 
 body {
- background-color: black;
- color: grey;
+   
+	/* display: grid; */
+
+
+ color: white;
+ background-image: url('../public/assets/gallery/Vine-bg.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
 
   &::-webkit-scrollbar {
     display: none;
@@ -46,4 +52,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-`
+`;

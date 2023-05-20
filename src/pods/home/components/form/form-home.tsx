@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputComponent } from '../../../../common';
+import { ButtonForm, InputComponent } from "@/common";
 import * as classes from './form.styles';
 
 export const FormHome: React.FC = () => {
@@ -9,21 +9,25 @@ export const FormHome: React.FC = () => {
         <InputComponent
           pl="Text your Name"
           name="name"
-          txtLabel="Name: "
+          txtLabel="Name "
           type="text"
+          className={classes.input}
         />
         <InputComponent
           pl="Text your Email"
           name="email"
-          txtLabel="Email: "
+          txtLabel="Email "
           type="email"
+          className={classes.input}
         />
         <InputComponent
           pl="Text your Password"
           name="password"
-          txtLabel="Password: "
+          txtLabel="Password "
           type="password"
+          className={classes.input}
         />
+        <ButtonForm txt="Send" />
       </classes.Form>
     </div>
   );

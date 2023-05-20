@@ -1,5 +1,5 @@
-import { root } from "./App.styles";
 import { AppRouter } from "./router";
+import { root } from "./App.styles";
 
 function App() {
   return( 
