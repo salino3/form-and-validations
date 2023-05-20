@@ -18,7 +18,7 @@ export const Form = styled.form`
   width: 500px;
   border: solid blue;
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px;
 `;
 
 export const input = css`
@@ -35,7 +35,7 @@ export const input = css`
 export const inputErr = css`
   input:focus {
     outline: 2px solid red;
-    border: 1px solid red;
+    border: 2px solid red;
   }
 
 `;
@@ -43,7 +43,7 @@ export const inputErr = css`
 export const inputGreen = css`
   input:focus {
     outline: 2px solid green;
-    border: 1px solid green;
+    border: 2px solid green;
   }
 
 `;
@@ -52,6 +52,7 @@ export const dError = css`
 
    height: 20px;
    color: red;
+   font-size: large;
   
 `;
 
