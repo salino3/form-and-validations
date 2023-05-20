@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {BrowserRouter} from 'react-router-dom'
-import './index'
+import './global.styles'
 //  npm install --save @vitejs/plugin-react-swc react react-dom react-scripts typescript
 
 
