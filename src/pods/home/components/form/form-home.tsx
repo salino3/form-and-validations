@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { cx } from "@emotion/css";
 import { LlamadaApi as Users, UsersProps } from "@/apis";
 import { ButtonForm, InputComponent } from "@/common";
+import { SwitchRoutes } from '@/router';
 import { FormData } from "./interface";
 import * as classes from './form.styles';
 
@@ -95,7 +96,7 @@ console.log(checkUserEmail);
      checkUserName?.email !== undefined 
      && checkUserPassword?.password !== undefined
    ) {
-    navigate(`second_page/${checkUserPassword.id}`);
+    navigate(`${SwitchRoutes.profile}/${checkUserPassword.id}`);
    } else {
      alert("Sorry some data maybe it's incorrect");
    }

@@ -7,7 +7,7 @@ body {
    
 
  color: white;
- background-image: url('assets/gallery/Taran-Tado.jpg');
+ background-image: url('/assets/gallery/Taran-Tado.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  height: 100vh;
