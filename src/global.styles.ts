@@ -5,11 +5,9 @@ injectGlobal`
 
 body {
    
-	/* display: grid; */
-
 
  color: white;
- background-image: url('../public/assets/gallery/Vine-bg.jpg');
+ background-image: url('assets/gallery/Taran-Tado.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  height: 100vh;

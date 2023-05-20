@@ -15,6 +15,7 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 500px;
   border: solid blue;
   border-radius: 15px;
   padding: 20px;
@@ -24,8 +25,38 @@ export const input = css`
   input {
     border-radius: 15px;
     padding-left: 4px;
+
+    outline: none;
+    border: 1px solid #ccc;
   }
 `;
 
 
+export const inputErr = css`
+  input:focus {
+    outline: 2px solid red;
+    border: 1px solid red;
+  }
 
+`;
+
+export const inputGreen = css`
+  input:focus {
+    outline: 2px solid green;
+    border: 1px solid green;
+  }
+
+`;
+
+export const dError = css`
+
+   height: 20px;
+   color: red;
+  
+`;
+
+export const dErrorHidden = css`
+  height: 20px;
+  color: red;
+  visibility: hidden;
+`;
