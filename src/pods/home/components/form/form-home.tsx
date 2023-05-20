@@ -89,7 +89,6 @@ export const FormHome: React.FC = () => {
     const checkUserPassword = Users.find(
       (user: UsersProps) => user.password === formData.password
     );
-console.log(checkUserEmail);
    //
    if (
      checkUserEmail === checkUserName &&
@@ -99,7 +98,7 @@ console.log(checkUserEmail);
     navigate(`${SwitchRoutes.profile}/${checkUserPassword.id}`);
    } else {
      alert("Sorry some data maybe it's incorrect");
-   }
+   };
  };
 
  
