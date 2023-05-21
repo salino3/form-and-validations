@@ -2,6 +2,7 @@ export interface Routes {
     root: string;
     profile: string;
     pageNotFound: string;
+    
 };
 
 export const SwitchRoutes: Routes = {
