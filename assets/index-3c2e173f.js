@@ -225,7 +225,7 @@ Error generating stack: `+i.message+`
   text-align: center;
 
   height: 100%;
-  background-image: url("/assets/gallery/Vine-bg.jpg");
+  background-image: url("assets/gallery/Vine-bg.jpg");
 `,Dv=X`
  
  display: flex;
@@ -263,7 +263,7 @@ body {
    
 
  color: white;
- background-image: url('/assets/gallery/Taran-Tado.jpg');
+ background-image: url('assets/gallery/Taran-Tado.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  height: 100vh;
