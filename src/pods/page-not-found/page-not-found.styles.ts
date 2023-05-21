@@ -9,7 +9,7 @@ export const container = css`
   text-align: center;
 
   height: 100%;
-  background-image: url("/assets/gallery/Vine-bg.jpg");
+  background-image: url("assets/gallery/Vine-bg.jpg");
 `;
 
 export const content = css`
