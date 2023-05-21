@@ -1,4 +1,4 @@
-interface Routes {
+export interface Routes {
     root: string;
     profile: string;
     pageNotFound: string;
