@@ -253,7 +253,7 @@ Error generating stack: `+i.message+`
    /* flex-direction: column;
   justify-content: center;
   align-items: center;  */
-  `,Vv=()=>R.jsx("div",{className:Wv,children:R.jsx(Mv,{})}),Hv=()=>R.jsxs(km,{children:[R.jsx(ul,{path:dl.root,element:R.jsx(Bv,{})}),R.jsx(ul,{path:`${dl.profile}/:id`,element:R.jsx(Vv,{})}),R.jsx(ul,{path:dl.pageNotFound,element:R.jsx(Uv,{})})]}),dl={root:"/form-and-validations/",profile:"/form-and-validations/profile",pageNotFound:"/form-and-validations/*"},Qv=X`
+  `,Vv=()=>R.jsx("div",{className:Wv,children:R.jsx(Mv,{})}),Hv=()=>R.jsxs(km,{children:[R.jsx(ul,{path:dl.root,element:R.jsx(Bv,{})}),R.jsx(ul,{path:`${dl.profile}/:id`,element:R.jsx(Vv,{})}),R.jsx(ul,{path:dl.pageNotFound,element:R.jsx(Uv,{})})]}),dl={root:"/form-and-validations/",profile:"/form-and-validations/profile",pageNotFound:"/*"},Qv=X`
 
  height: 100vh;
  
