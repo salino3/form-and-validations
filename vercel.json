@@ -2,6 +2,7 @@
   "builds": [
     { "src": "dist/*", "use": "@vercel/static", "config": { "output": "form-and-validations" } }
   ],
+  
   "routes": [
     { "src": "/.*", "dest": "dist/index.html" }
   ]
