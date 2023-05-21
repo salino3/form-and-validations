@@ -19,6 +19,12 @@ export const Form = styled.form`
   border: solid blue;
   border-radius: 15px;
   padding: 30px;
+  
+  &:hover {
+    -webkit-box-shadow: 13px 6px 48px 16px rgba(21, 14, 204, 1);
+    -moz-box-shadow: 13px 6px 48px 26px rgba(21, 14, 204, 1);
+    box-shadow: 9px 6px 48px 22px rgba(21, 14, 204, 1);
+  }
 `;
 
 export const input = css`
