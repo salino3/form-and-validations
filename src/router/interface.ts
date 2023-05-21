@@ -5,7 +5,7 @@ interface Routes {
 };
 
 export const SwitchRoutes: Routes = {
- root: '/',
- profile: '/profile',
- pageNotFound: '/*'
+  root: "/form-and-validations/",
+  profile: "/form-and-validations/profile",
+  pageNotFound: "/form-and-validations/*",
 };

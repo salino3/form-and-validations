@@ -1,24 +1,41 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { Link, useParams } from "react-router-dom";
 import { LlamadaApi as Users, UsersProps } from "@/apis";
-import * as classes from './profile.styles';
+import * as classes from "./profile.styles";
+import { BoxDescription } from "./component";
+import { GoBack } from "@/common";
 
 export const ProfileComponent: React.FC = () => {
+  const { id } = useParams();
 
- const {id} = useParams();
+  const [user, setUser] = React.useState<UsersProps>(
+    Users.filter((user: UsersProps) => user.id === Number(id))[0]
+  );
 
- const [user, setUser] = React.useState<UsersProps>(Users.filter((user: UsersProps) => user.id === Number(id))[0]);
+  if (!user) {
+    return (
+      <div className={classes.boxTitle}>
+        <h1 className={classes.textError}>We didn't find any user with ID: {id}</h1>
+        <GoBack />
+      </div>
+    );
+  };
 
 
-
- console.log(user);
   return (
     <div className={classes.root}>
-      <h1>Your profile</h1>
-      <h2>{user?.id}</h2>
-      <h3>{user?.name}</h3>
-      <h3>{user?.email}</h3>
-      <h3>{user?.age}</h3>
+      <div className={classes.boxTitle}>
+        <h1>
+          Welcome <span>{user?.name}!</span>
+        </h1>
+        <GoBack />
+      </div>
+      <div className={classes.boxData}>
+        <BoxDescription text="ID:" user={user?.id} />
+        <BoxDescription text="Name:" user={user?.name} />
+        <BoxDescription text="Email" user={user?.email} />
+        <BoxDescription text="Age: " user={user?.age} />
+      </div>
     </div>
   );
-}
+};

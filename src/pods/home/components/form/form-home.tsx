@@ -144,7 +144,6 @@ console.log(errorForm.email)
         >
           <b>{errorForm.email}</b>
         </div>
-        {/*  */}
         <InputComponent
           pl="Text your Password"
           name="password"
